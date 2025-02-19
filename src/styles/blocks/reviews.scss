@@ -93,13 +93,13 @@
     margin: 0 auto;
     margin-bottom: 8px;
     &.blue-theme.icon-blue {
-      content: url('/src/images/icon-blue.svg');
+      content: url('../images/icon-blue.svg');
     }
     &.blue-theme.icon-yellow {
-      content: url('/src/images/icon-yellow.svg');
+      content: url('../images/icon-yellow.svg');
     }
     &.blue-theme.icon-red {
-      content: url('/src/images/icon-red.svg');
+      content: url('../images/icon-red.svg');
     }
   }
   &__descr {

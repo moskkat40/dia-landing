@@ -1,17 +1,18 @@
+/* eslint-disable no-undef */
 'use strict';
-let img = [
+
+const img = [
   require('/src/images/slider/slider-photo-1.png'),
   require('/src/images/slider/slider-photo-2.png'),
-  require('/src/images/slider/slider-photo-3.png')
+  require('/src/images/slider/slider-photo-3.png'),
 ];
 
-const sliderItem = document.querySelector('.slider__item')
+const sliderItem = document.querySelector('.slider__item');
 const arrowPrev = document.querySelector('.slider__arrow-left');
 const arrowNext = document.querySelector('.slider__arrow-right');
 let num = 0;
-console.log(sliderItem);
 
-//slider
+// slider
 function next() {
   num++;
 
@@ -39,10 +40,8 @@ arrowNext.addEventListener('click', () => {
   next();
 });
 
+// burger-menu
 
-//burger-menu
-
-const burgerBtn = document.querySelector('#burger');
 const burgerClose = document.querySelector('.burger__close');
 const burgerOpen = document.querySelector('.top-bar__open');
 const burgerMenu = document.querySelector('.burger');
@@ -61,7 +60,7 @@ burgerClose.addEventListener('click', () => {
 });
 
 burgerMenu.addEventListener('click', (event) => {
-  if(event.target) {
+  if (event.target) {
     burgerMenu.style.display = 'none';
     topBarIcon.style.display = 'block';
     topBarHire.style.display = 'block';
@@ -69,37 +68,35 @@ burgerMenu.addEventListener('click', (event) => {
   }
 });
 
-
-//change theme
-const switchers = document.querySelectorAll('.switcher')
-//header
+// change theme
+const switchers = document.querySelectorAll('.switcher');
+// header
 
 const header = document.querySelector('.header');
 const headerButton = document.querySelector('.header__button');
-const hire = document.querySelector('.top-bar__hire')
+const hire = document.querySelector('.top-bar__hire');
 
-//services
+// services
 const servicesButton = document.querySelectorAll('.services__button');
 const servisesNumbers = document.querySelectorAll('.services__number');
 
-//reviews
+// reviews
 const persons = document.querySelectorAll('.reviews__img');
 const icons = document.querySelectorAll('.reviews__icon');
 
-//vision
+// vision
 const vision = document.querySelector('.vision');
 const visionButton = document.querySelector('.vision__button');
 
-//contactUs
+// contactUs
 const contactUs = document.querySelector('.contactUs');
 const contactUsButton = document.querySelector('.contactUs__button');
-const contactUsInputs = document.querySelectorAll('.contactUs__form_input')
+const contactUsInputs = document.querySelectorAll('.contactUs__form_input');
 
-//burger
+// burger
 
 const menus = document.querySelectorAll('.page__menu');
 const footerPage = document.querySelector('.footer');
-
 
 function toggleTheme() {
   header.classList.toggle('blue-theme');
@@ -120,18 +117,18 @@ function toggleTheme() {
   menus.forEach((menu) => menu.classList.toggle('blue-theme'));
   footerPage.classList.toggle('blue-theme');
 
-
   const isBlueTheme = header.classList.contains('blue-theme');
+
   localStorage.setItem('theme', isBlueTheme ? 'blue' : 'default');
 }
 
 window.addEventListener('load', () => {
   const savedTheme = localStorage.getItem('theme');
+
   if (savedTheme === 'blue') {
     toggleTheme();
   }
 });
-
 
 switchers.forEach((switcher) => {
   switcher.addEventListener('click', toggleTheme);
