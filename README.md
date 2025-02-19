@@ -1,4 +1,12 @@
-# Base layout template with Gulp, SCSS and Stylelint
-1. Create a repo using this template
-1. Replace `<your_account>` and `<repo_name>` with your Github username and the new repo name
-    - [DEMO LINK](https://<your_account>.github.io/<repo_name>/)
+1. This is a study landing for creative agency's website "AIR"
+2. This project uses technologies such as:
+  - HTML
+  - SCSS
+  - BEM
+  - Mobile-first development
+  - Webpack
+  - Vanilla JS
+3. Demo link:
+  - [https://moskkat40.github.io/dia-landing/](https://moskkat40.github.io/dia-landing/)
+4. Design:
+  - https://www.figma.com/design/7qwsWggv9BAxMi2VPhBuPr/Air-(formerly-Dia))?node-id=0-1&p=f&t=iuWMAaGRR6B5xuQP-0
