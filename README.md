@@ -1,4 +1,4 @@
-1. This is a study landing for creative agency's website "AIR"
+1. This is a study landing for creative agency's website "Visionary"
 2. This project uses technologies such as:
   - HTML
   - SCSS
